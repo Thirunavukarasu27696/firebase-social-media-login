@@ -22,9 +22,9 @@ export default function AppRouting() {
                     <li>
                         <Link to="/linkedin">linkedin</Link>
                     </li>
-                    {/* <li>
-                        <Link to="/dashboard">Dashboard</Link>
-                    </li> */}
+                    <li>
+                        <Link to="/firebase">Dashboard</Link>
+                    </li>
                 </ul>
 
                 <hr />
