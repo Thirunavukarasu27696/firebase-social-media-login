@@ -45,7 +45,7 @@ class SignInWithLinkedIn extends Component {
 
     getAccessToken(code) {
         // const { code } = this.state;
-        const url = `https://www.linkedin.com/oauth/v2/accessToken?grant_type=authorization_code&redirect_uri=http://localhost:3000/linkedin&client_id=86fl22mto3b92u&client_secret=FHeTaubxVPzl7WJN&code=${code}`;
+        const url = `https://www.linkedin.com/oauth/v2/accessToken?grant_type=authorization_code&redirect_uri=https://firebase-social-media-login.herokuapp.com/linkedin&client_id=86fl22mto3b92u&client_secret=FHeTaubxVPzl7WJN&code=${code}`;
 
         APIService.get(url, null).then(response => {
             console.log(response);
