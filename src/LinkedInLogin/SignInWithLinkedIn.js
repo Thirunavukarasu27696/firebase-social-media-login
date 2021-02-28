@@ -62,7 +62,7 @@ class SignInWithLinkedIn extends Component {
                     clientId="86fl22mto3b92u"
                     onFailure={e => this.handleFailure(e)}
                     onSuccess={e => this.handleSuccess(e)}
-                    redirectUri="http://localhost:3000/linkedin"
+                    redirectUri="https://firebase-social-media-login.herokuapp.com/linkedin"
                 >
                     <img src={linkedin} alt="Log in with Linked In" style={{ maxWidth: '180px' }} />
                 </LinkedIn>
