@@ -23,7 +23,7 @@ class SignInWithLinkedIn extends Component {
     }
 
     handleSuccess(data) {
-        debugger
+        
         console.log(data);
         if (data.code) {
             this.getAccessToken(data.code);
@@ -36,7 +36,7 @@ class SignInWithLinkedIn extends Component {
     }
 
     handleFailure(error) {
-        debugger
+        
         console.log(error);
         this.setState({
             code: '',
