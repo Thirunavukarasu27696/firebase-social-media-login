@@ -70,8 +70,8 @@ export default function AppRouting() {
                         <LinkedInPopUp />
                     </Route>
                     <Route path="/">
-                        <LinkedIn loading={false} onSuccess={handleSuccess} onFailure={handleFailure} />
-                        {/* <SignInWithLinkedIn /> */}
+                        {/* <LinkedIn loading={false} onSuccess={handleSuccess} onFailure={handleFailure} /> */}
+                        <SignInWithLinkedIn />
                     </Route>
 
                 </Switch>

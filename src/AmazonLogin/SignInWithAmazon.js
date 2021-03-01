@@ -13,13 +13,12 @@ class SignInWithAmazon extends Component {
 
     componentDidMount() {
         console.log('hiiiiiiiii');
-        debugger
+        
     }
 
-    handleSocialLogin(user, err) {
-        debugger
+    handleSocialLogin(user) {
+        
         console.log(user)
-        console.log(err)
     }
 
     handleSocialLoginFailure(err) {
