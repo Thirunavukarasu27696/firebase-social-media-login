@@ -16,7 +16,6 @@
     "react-linkedin-login-oauth2": "^1.0.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
-    "react-social-login": "^3.4.12",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

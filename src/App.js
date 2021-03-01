@@ -18,14 +18,14 @@ function App() {
   return (
     <div className="App">
       {/* <FirebaseSignIn/> */}
-      {/* <ReactSocialLogin
+      <ReactSocialLogin
       provider='amazon'
       appId='amzn1.application-oa2-client.8f7078cea0ff48ca87ac807b8e60ae4e'
       onLoginSuccess={handleSocialLogin}
       onLoginFailure={handleSocialLoginFailure}
     >
       Login with Amazon
-    </ReactSocialLogin> */}
+    </ReactSocialLogin>
     <AppRouting/>
     {/* <SignInWithLinkedIn/> */}
     </div>
