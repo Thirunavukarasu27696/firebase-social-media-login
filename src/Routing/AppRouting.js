@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import LinkedIn from "../LinkedIn";
 import { LinkedInPopUp } from 'react-linkedin-login-oauth2';
+import AmzonLogin from '../react-social-login/AmzonLogin';
 
 
 export default function AppRouting() {
@@ -17,7 +18,6 @@ export default function AppRouting() {
 
 
     const handleSuccess = (data) => {
-        debugger
         console.log(data);
         if (data.code) {
             this.getAccessToken(data.code);
@@ -30,7 +30,6 @@ export default function AppRouting() {
     }
 
     const handleFailure = (error) => {
-        debugger
         console.log(error);
         this.setState({
             code: '',
@@ -48,21 +47,27 @@ export default function AppRouting() {
                         <Link to="/linkedin">linkedin</Link>
                     </li>
                     <li>
+                        <Link to="/amazon">Amazon</Link>
+                    </li>
+                    <li>
                         <Link to="/firebase">Dashboard</Link>
                     </li>
-                   
+
                 </ul>
 
                 <hr />
 
 
                 <Switch>
-                   
+
                     <Route exact path="/firebase">
                         <FirebaseSignIn />
                     </Route>
                     <Route path="/linkedin">
                         <LinkedInPopUp />
+                    </Route>
+                    <Route path="/amazon">
+                        <AmzonLogin />
                     </Route>
                     <Route path="/">
                         {/* <LinkedIn loading={false} onSuccess={handleSuccess} onFailure={handleFailure} /> */}
