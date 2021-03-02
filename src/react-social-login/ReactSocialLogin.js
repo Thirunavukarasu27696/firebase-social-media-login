@@ -8,15 +8,12 @@ class ReactSocialLogin extends Component {
 
         }
     }
-
-    componentDidMount() {
-        console.log(this.props);
-    }
     render() {
+        const { children, triggerLogin, ...props } = this.props;
         return (
             <div>
-                <button onClick={this.props.triggerLogin} {...this.props}>
-                    {this.props.children}
+                <button onClick={triggerLogin} {...props} >
+                    {children}
                 </button>
             </div>
         )

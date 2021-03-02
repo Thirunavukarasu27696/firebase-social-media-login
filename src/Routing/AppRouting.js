@@ -11,7 +11,7 @@ import {
 import LinkedIn from "../LinkedIn";
 import { LinkedInPopUp } from 'react-linkedin-login-oauth2';
 import AmazonSignIn from '../Amazon/AmazonSignIn';
-import AmazonLogin from '../react-social-login/AmazonLogin';
+import AmazonLogin from "../react-social-login/AmazonLogin";
 
 
 export default function AppRouting() {

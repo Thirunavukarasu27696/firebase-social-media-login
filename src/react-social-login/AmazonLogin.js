@@ -61,7 +61,7 @@ export default function AmazonLogin() {
 
             </div>}
             <hr></hr>
-            <button onClick={logoutAmazon}>logout</button>
+            {userObj && <button onClick={logoutAmazon}>logout</button>}
         </div>
     )
 }
