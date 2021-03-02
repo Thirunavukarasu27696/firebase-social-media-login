@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import ReactSocialLogin from './ReactSocialLogin'
 import avatar3 from '../assets/img/avatar3.png';
-export default function AmzonLogin() {
+import AmazonButton from './AmazonButton';
+export default function AmazonSignIn() {
     const [userObj, setUserObj] = useState(null);
     const [token, setToken] = useState(null);
 
@@ -41,13 +41,13 @@ export default function AmzonLogin() {
     }
     return (
         <div>
-            {!userObj && <ReactSocialLogin
+            {!userObj && <AmazonButton
                 provider='amazon'
-                appId='amzn1.application-oa2-client.8f7078cea0ff48ca87ac807b8e60ae4e'
+                appId='amzn1.application-oa2-client.22381abab3e44f0b9d83a1a6970b27b1'
                 onLoginSuccess={handleSocialLogin}
                 onLoginFailure={handleSocialLoginFailure}
             >  Login with Amazon
-    </ReactSocialLogin>}
+    </AmazonButton>}
             <hr></hr>
 
             {userObj && <div>

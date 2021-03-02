@@ -10,7 +10,8 @@ import {
 } from "react-router-dom";
 import LinkedIn from "../LinkedIn";
 import { LinkedInPopUp } from 'react-linkedin-login-oauth2';
-import AmzonLogin from '../react-social-login/AmzonLogin';
+import AmazonSignIn from '../Amazon/AmazonSignIn';
+import AmazonLogin from '../react-social-login/AmazonLogin';
 
 
 export default function AppRouting() {
@@ -50,6 +51,9 @@ export default function AppRouting() {
                         <Link to="/amazon">Amazon</Link>
                     </li>
                     <li>
+                        <Link to="/amazonsignin">Amazon2</Link>
+                    </li>
+                    <li>
                         <Link to="/firebase">Dashboard</Link>
                     </li>
 
@@ -67,7 +71,10 @@ export default function AppRouting() {
                         <LinkedInPopUp />
                     </Route>
                     <Route path="/amazon">
-                        <AmzonLogin />
+                        <AmazonLogin />
+                    </Route>
+                    <Route path="/amazonsignin">
+                        <AmazonSignIn />
                     </Route>
                     <Route path="/">
                         {/* <LinkedIn loading={false} onSuccess={handleSuccess} onFailure={handleFailure} /> */}
