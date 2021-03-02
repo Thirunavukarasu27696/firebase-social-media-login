@@ -44,9 +44,9 @@ export default function AppRouting() {
                     <li>
                         <Link to="/">Home</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/linkedin">linkedin</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="/amazon">Amazon</Link>
                     </li>
