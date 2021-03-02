@@ -9,7 +9,7 @@ export default function AmazonSignIn() {
     useEffect(() => {
         if (localStorage.user) {
 
-            setUserObj(JSON.parse(localStorage.user._profile));
+            setUserObj(JSON.parse(localStorage.user));
             setToken(localStorage._token);
 
         } else {
