@@ -13,6 +13,7 @@ import { LinkedInPopUp } from 'react-linkedin-login-oauth2';
 import AmazonSignIn from '../Amazon/AmazonSignIn';
 import AmazonLogin from "../react-social-login/AmazonLogin";
 import FaceBookLogin from '../Facebook/FaceBookLogin';
+import Test from '../SelectBoxWithPagination/SelectBox';
 
 
 export default function AppRouting() {
@@ -58,6 +59,9 @@ export default function AppRouting() {
                         <Link to="/facebook">Facebook</Link>
                     </li>
                     <li>
+                        <Link to="/selectbox-with-pagination">SelectBox</Link>
+                    </li>
+                    <li>
                         <Link to="/firebase">Dashboard</Link>
                     </li>
 
@@ -82,6 +86,9 @@ export default function AppRouting() {
                     </Route> 
                     <Route path="/facebook">
                         <FaceBookLogin />
+                    </Route>
+                    <Route path="/selectbox-with-pagination">
+                        <Test />
                     </Route>
                     <Route path="/">
                         {/* <LinkedIn loading={false} onSuccess={handleSuccess} onFailure={handleFailure} /> */}
