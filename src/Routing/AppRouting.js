@@ -58,9 +58,9 @@ export default function AppRouting() {
                     <li>
                         <Link to="/facebook">Facebook</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/selectbox-with-pagination">SelectBox</Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="/firebase">Dashboard</Link>
                     </li>
@@ -87,9 +87,9 @@ export default function AppRouting() {
                     <Route path="/facebook">
                         <FaceBookLogin />
                     </Route>
-                    <Route path="/selectbox-with-pagination">
+                    {/* <Route path="/selectbox-with-pagination">
                         <Test />
-                    </Route>
+                    </Route> */}
                     <Route path="/">
                         {/* <LinkedIn loading={false} onSuccess={handleSuccess} onFailure={handleFailure} /> */}
                         <SignInWithLinkedIn />

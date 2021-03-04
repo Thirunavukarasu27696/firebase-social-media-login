@@ -1,24 +1,23 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "antd/dist/antd.css";
-import { Select, Icon, Divider, Pagination, Button } from "antd";
-import faker from "faker";
+// import "antd/dist/antd.css";
+// import { Select, Icon, Divider, Pagination, Button } from "antd";
+// import faker from "faker";
 
-const Option = Select.Option;
-let names = [];
-const count = 100;
-const pageSize = 10;
-for (let i = 0; i < count; i++) {
-    names.push(faker.name.firstName());
-}
+// const Option = Select.Option;
+// let names = [];
+// const count = 100;
+// const pageSize = 10;
+// for (let i = 0; i < count; i++) {
+//     names.push(faker.name.firstName());
+// }
 
-const getNames = pageNumber => {
-    let toSendNames = [];
-    for (let i = (pageNumber - 1) * pageSize; i < pageNumber * pageSize; i++) {
-        toSendNames.push(names[i]);
-    }
-    return toSendNames;
-};
+// const getNames = pageNumber => {
+//     let toSendNames = [];
+//     for (let i = (pageNumber - 1) * pageSize; i < pageNumber * pageSize; i++) {
+//         toSendNames.push(names[i]);
+//     }
+//     return toSendNames;
+// };
 
 class Test extends React.Component {
     state = {
@@ -32,7 +31,11 @@ class Test extends React.Component {
     render = () => {
         return (
             <div>
-                <Select
+                hi from selectbox
+                {/* antd version  "antd": "^4.13.0", */}
+                {/*faker for sample user object "faker": "^5.4.0", */}
+
+                {/* <Select
                     placeholder="Select any name..."
                     style={{ width: 250 }}
                     onFocus={() => {
@@ -76,7 +79,7 @@ class Test extends React.Component {
                     {getNames(this.state.currentPage).map((item, ind) => {
                         return <Option value={item} key={ind}>{item}</Option>;
                     })}
-                </Select>
+                </Select> */}
             </div>
         );
     };
